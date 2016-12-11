@@ -107,25 +107,25 @@ img {
   margin-top: 14rem;
   text-shadow: 2px 2px 2px #000;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 3vh;
   font-family: sans-serif;
   text-align: left;
   line-height: 1.2;
 }
 h1 {
-  font-size: 2.7rem;
+  font-size: 4.9vh;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 3.2vh;
 }
 .contact {
-  margin-top: 8rem;
-  margin-bottom: 5rem;
+  margin-top: 8vh;
+  margin-bottom: 20vh;
 }
 .contact-info {
   margin-left: 72px;
-  margin-top: 58px;
-  font-size: 2.3rem;
+  margin-top: 2rem;
+  font-size: 4vh;
 }
 .contact-info > p {
   margin-bottom: 10px;
@@ -144,13 +144,24 @@ h2 {
   color: inherit;
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 500px) {
   .offset {
     margin: 0;
   }
   .contact-info {
     margin-left: 18px;
     margin-top: 38px;
-    font-size: 2rem;
+    font-size: 3vh;
   }
+  .contact {
+    margin-bottom: 17vh;
+  }
+  .text {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+
 }
