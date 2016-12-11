@@ -75,22 +75,22 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  transition: background-image 1s ease-in-out;
+  transition: background-image 2s ease-in-out;
 }
 
+.logo {
+  width: 55%;
+  position: absolute;
+  top: -3%;
+  left: -21%;
+  min-width: 400px;
+  max-width: 456px;
+}
 
+@media only screen and (min-width: 800px) {
+  .logo {
+    left: -176px;
+    top: -33px;
+  }
 
-@keyframes fadeInOut {
-  0% {
-    opacity:1;
-  }
-  92% {
-    opacity: 1
-  }
-  96% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
 }
