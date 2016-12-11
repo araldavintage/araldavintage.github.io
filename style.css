@@ -33,6 +33,7 @@ button {
 }
 
 body {
+  font-family: 'Roboto Condensed', sans-serif;
   background: #fafafa;
   position: absolute;
   width: 100%;
@@ -108,7 +109,6 @@ img {
   text-shadow: 2px 2px 2px #000;
   color: #fff;
   font-size: 3vh;
-  font-family: sans-serif;
   text-align: left;
   line-height: 1.2;
 }
@@ -138,10 +138,16 @@ h2 {
   color: inherit;
   cursor: pointer;
 }
+.email:hover {
+  color: #faecb9;
+}
 .address a{
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+}
+.address a:hover {
+  color: #faecb9;
 }
 
 @media only screen and (max-width: 500px) {
@@ -159,9 +165,4 @@ h2 {
   .text {
     margin-top: 10rem;
   }
-}
-
-@media only screen and (max-width: 400px) {
-
-
 }
