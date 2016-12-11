@@ -8,11 +8,7 @@
     },
 
     updatePhotoNum: function () {
-      if (splash.photoNum === 7) {
-        splash.photoNum = 1;
-      } else {
-        splash.photoNum += 1;
-      }
+      splash.photoNum = Math.floor(Math.random() * 5) + 1;
     }
   };
   splash.photoNum = 2;
