@@ -73,7 +73,10 @@ img {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url('./assets/5.jpeg') no-repeat center center fixed;
+  background: url('./assets/5.jpeg') no-repeat center center fixed, -webkit-linear-gradient(left, #ba53a0, #fff);
+  background: url('./assets/5.jpeg') no-repeat center center fixed, -o-linear-gradient(right, #ba53a0, #fff);
+  background: url('./assets/5.jpeg') no-repeat center center fixed, -moz-linear-gradient(right, #ba53a0, #fff);
+  background: url('./assets/5.jpeg') no-repeat center center fixed, linear-gradient(to right, #ba53a0, #fff);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -120,7 +123,7 @@ h2 {
 }
 .contact {
   margin-top: 8vh;
-  margin-bottom: 20vh;
+  margin-bottom: 13vh;
 }
 .contact-info {
   margin-left: 72px;
