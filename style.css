@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'BenchNineBOLD';
+  src: url('./assets/fonts/BenchNine-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/BenchNine-Bold.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'BenchNineLIGHT';
+  src: url('./assets/fonts/BenchNine-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/BenchNine-Light.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'BenchNine';
+  src: url('./assets/fonts/BenchNine-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/BenchNine-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+
 /* ----------RESET---------*/
 html, body, form, h1, div, label, header, a, nav, h2, p {
   margin: 0;
@@ -33,7 +52,7 @@ button {
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'BenchNine';
   background: #fafafa;
   position: absolute;
   width: 100%;
@@ -57,6 +76,9 @@ img {
   display: block;
   clear: both;
 }
+.bold {
+  font-family: 'BenchNineBOLD';
+}
 
 /*--------------------SPLASH------------------*/
 
@@ -73,10 +95,10 @@ img {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url('./assets/5.jpeg') no-repeat center center fixed, -webkit-linear-gradient(left, #ba53a0, #fff);
-  background: url('./assets/5.jpeg') no-repeat center center fixed, -o-linear-gradient(right, #ba53a0, #fff);
-  background: url('./assets/5.jpeg') no-repeat center center fixed, -moz-linear-gradient(right, #ba53a0, #fff);
-  background: url('./assets/5.jpeg') no-repeat center center fixed, linear-gradient(to right, #ba53a0, #fff);
+  background: url('./assets/2.jpeg') no-repeat center center fixed, -webkit-linear-gradient(left, #ba53a0, #fff);
+  background: url('./assets/2.jpeg') no-repeat center center fixed, -o-linear-gradient(right, #ba53a0, #fff);
+  background: url('./assets/2.jpeg') no-repeat center center fixed, -moz-linear-gradient(right, #ba53a0, #fff);
+  background: url('./assets/2.jpeg') no-repeat center center fixed, linear-gradient(to right, #ba53a0, #fff);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -85,19 +107,12 @@ img {
 }
 
 .logo {
-  width: 55%;
-  position: absolute;
-  top: -3%;
-  left: -21%;
-  min-width: 400px;
-  max-width: 456px;
-}
-
-@media only screen and (min-width: 800px) {
-  .logo {
-    left: -176px;
-    top: -33px;
-  }
+  width: 100%;
+  color: #000;
+  padding: 20px;
+  font-size: 4.7rem;
+  font-family: 'BenchNineLIGHT';
+  /*text-shadow: 2px 2px 2px #000;*/
 }
 
 .text-container {
@@ -108,18 +123,15 @@ img {
 .text {
   max-width: 706px;
   margin: 0 20px;
-  margin-top: 14rem;
-  text-shadow: 2px 2px 2px #000;
-  color: #fff;
-  font-size: 3vh;
+  margin-top: 5vh;
+  /*text-shadow: 2px 2px 2px #000;*/
+  color: #000;
+  font-size: 4vh;
   text-align: left;
   line-height: 1.2;
 }
-h1 {
-  font-size: 4.9vh;
-}
 h2 {
-  font-size: 3.2vh;
+  font-size: 4.2vh;
 }
 .contact {
   margin-top: 8vh;
@@ -128,7 +140,7 @@ h2 {
 .contact-info {
   margin-left: 72px;
   margin-top: 2rem;
-  font-size: 4vh;
+  font-size: 4.5vw;
 }
 .contact-info > p {
   margin-bottom: 10px;
@@ -142,7 +154,13 @@ h2 {
   cursor: pointer;
 }
 .email:hover {
-  color: #faecb9;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+.address {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 .address a{
   cursor: pointer;
@@ -150,7 +168,8 @@ h2 {
   color: inherit;
 }
 .address a:hover {
-  color: #faecb9;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
 }
 
 @media only screen and (max-width: 500px) {
@@ -164,8 +183,5 @@ h2 {
   }
   .contact {
     margin-bottom: 17vh;
-  }
-  .text {
-    margin-top: 10rem;
   }
 }
